@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pesan">
+
+    <fragment
+        android:id="@+id/pesan"
+        android:name="com.example.pesanpancong.Pesan"
+        android:label="fragment_pesan"
+        tools:layout="@layout/fragment_pesan" >
+        <action
+            android:id="@+id/action_pesan_to_detail"
+            app:destination="@id/detail" />
+        <argument
+            android:name="nama"
+            app:argType="string" />
+        <argument
+            android:name="bawa"
+            app:argType="string" />
+        <argument
+            android:name="pancong"
+            app:argType="string" />
+        <argument android:name="coklat"
+            app:argType="string" />
+        <argument
+            android:name="keju"
+            app:argType="string" />
+        <argument
+            android:name="kacang"
+            app:argType="string" />
+        <argument
+            android:name="oreo"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.pesanpancong.Detail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>

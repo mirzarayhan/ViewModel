@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pancong">
+        <item>Pancong Original</item>
+        <item>Pancong Coklat</item>
+        <item>Pancong Matcha</item>
+        <item>Pancong Strawberry</item>
+    </string-array>
+</resources>
